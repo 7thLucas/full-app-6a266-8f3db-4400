@@ -1,0 +1,61 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; align-items: stretch; }
+  .mode-portrait .sl-layout { flex-direction: column; }
+  .mode-landscape .sl-left { width: 58%; }
+  .mode-landscape .sl-right { width: 42%; }
+  .mode-portrait .sl-left { width: 100%; }
+  .mode-portrait .sl-right { width: 100%; min-height: 220px; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full">
+
+    <!-- Left: problem + solution -->
+    <div class="sl-left flex flex-col justify-center gap-6 p-12">
+
+      <!-- Section label -->
+      <div class="flex items-center gap-2 mb-1">
+        <span class="block w-6 h-0.5 bg-orange-500"></span>
+        <span class="text-xs font-bold tracking-widest text-orange-500 uppercase">Why MoveCommand</span>
+      </div>
+
+      <!-- Problem zone -->
+      <div class="bg-slate-50 border-l-4 border-slate-400 rounded-r-xl p-6">
+        <h2 class="text-sm font-extrabold text-slate-700 uppercase tracking-wider mb-3">The Problem</h2>
+        <p class="text-sm text-slate-700 leading-relaxed">
+          Moving company managers juggle dozens of simultaneous jobs — coordinating crews, trucks, and schedules across spreadsheets and phone calls. The result: double-booked trucks, understaffed crews, late arrivals, and damage claims that erode reputation and revenue.
+        </p>
+        <div class="flex flex-wrap gap-2 mt-4">
+          <span class="bg-red-100 text-red-700 text-xs font-semibold px-3 py-1 rounded-full">Double-booked trucks</span>
+          <span class="bg-red-100 text-red-700 text-xs font-semibold px-3 py-1 rounded-full">Understaffed crews</span>
+          <span class="bg-red-100 text-red-700 text-xs font-semibold px-3 py-1 rounded-full">Missed schedules</span>
+          <span class="bg-red-100 text-red-700 text-xs font-semibold px-3 py-1 rounded-full">Damage disputes</span>
+        </div>
+      </div>
+
+      <!-- Solution zone -->
+      <div class="bg-blue-950 rounded-xl p-6">
+        <h2 class="text-sm font-extrabold text-orange-400 uppercase tracking-wider mb-3">The Solution</h2>
+        <p class="text-sm text-blue-100 leading-relaxed">
+          MoveCommand brings every operation into one real-time platform. Job bookings, crew assignments, and truck logistics — all synchronised, all visible, all under control. Managers stop firefighting and start leading.
+        </p>
+        <div class="flex flex-wrap gap-2 mt-4">
+          <span class="bg-orange-500 text-white text-xs font-semibold px-3 py-1 rounded-full">Unified bookings</span>
+          <span class="bg-orange-500 text-white text-xs font-semibold px-3 py-1 rounded-full">Real-time crew view</span>
+          <span class="bg-orange-500 text-white text-xs font-semibold px-3 py-1 rounded-full">Fleet tracking</span>
+          <span class="bg-orange-500 text-white text-xs font-semibold px-3 py-1 rounded-full">Zero-damage logging</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Right: visual -->
+    <div class="sl-right relative overflow-hidden">
+      <img
+        src="https://api-stag.qb-deck.quantumbyte.ai/common/image-generation?prompt=organized+professional+moving+company+crew+in+uniform+loading+furniture+into+truck+on+sunny+day+clean+efficient+teamwork"
+        alt="Professional moving crew at work"
+        class="w-full h-full object-cover"
+      />
+    </div>
+
+  </div>
+</section>
